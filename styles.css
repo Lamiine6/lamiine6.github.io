@@ -1,0 +1,142 @@
+/* Style global pour le corps du document */
+body {
+	background-color: #EFFAFD;
+	font-family: 'Arial', sans-serif;
+}
+
+/* Styles pour les liens */
+a {
+	transition: color 0.3s ease-in-out;
+	text-decoration: none;
+	color: darkblue;
+	font-weight: bold;
+	font-size: 16px;
+}
+
+/* Styles au survol des liens */
+a:hover {
+	color: darkcyan;
+	text-decoration: underline;
+}
+
+/* Styles pour les liens visités pour la classe liens */
+.liens a:visited{
+	color: purple;
+}
+
+/* Styles pour les sections */
+section {
+	background-color: rgba(244, 244, 2444, 0.2);
+	margin-bottom: 20px;
+	padding:20px;
+	box-shadow: 4px 4px rgba(0, 0, 0, 0.1);
+	border: 1px solid #ddd;
+	border-radius: 5px;
+}
+
+/* Styles pour les titres de niveau 1 */
+h1 {
+	font-size: 2em;
+	color:black;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	text-align: center;
+}
+
+/* Styles pour les titres de niveau 2 */
+h2 {
+	font-size: 1.5em;
+	color:orangered;
+	margin-top: 20px;
+	margin-bottom: 5px;
+	text-align: center;
+}
+
+/* Styles pour la barre de navigation */
+nav {
+	background-color: lightblue;
+	opacity: 1;
+	max-width: 350px;
+}
+
+/* Styles pour la liste non ordonnée*/
+ul {
+	list-style: none;
+	padding: 0;
+	margin: 0;
+	display: block; 
+}
+
+/* Styles pour les légendes des figures */
+figcaption {
+	font-style: italic;
+	color: gray;
+}
+
+/* Styles pour les cellules footer */
+footer th,footer td {
+  padding: 8px;
+  text-align: left;
+}
+
+/* Styles au survol des lignes du footer */
+footer tr:hover {
+  background-color: #f5f5f5;
+}
+
+/*Style des figures */
+figure {
+    max-width: 55%;
+    padding: 10px;
+    box-shadow: 2px 2px 5px #888888;
+}
+
+/* Style de la banniere dans le footer */
+footer img {
+	float: right;/* Alignement a droite du footer */
+	max-width: 30%;
+	height: auto;
+}
+
+/*Style du tableau dans le footer */
+ footer table {
+ 	 float: left; /* Alignement à gauche */
+    width: 60%; /* Largeur du tableau */
+    border-collapse: collapse; /* Supprime les espaces entre les cellules de la table */
+    margin-bottom: 10px; /* Marge en bas de la table */
+}
+
+/* Style des cellules du tableau dans le footer */
+footer table td {
+	color: black;
+   padding: 6px; /* Espace intérieur des cellules */
+} 
+
+/* Style des liens dans le footer */
+footer a {
+    color: black; /* Couleur du texte par défaut */
+    text-decoration: none; /* Supprime le soulignement par défaut */
+    transition: color 0.3s ease-in-out; /* Animation de transition de couleur */
+}
+
+/* Style au survol des liens dans le footer */
+footer a:hover {
+    color: orangered; /* Nouvelle couleur au survol */
+}
+
+/* Style des liens dans le menu de navigation */
+nav a{
+	color: white;
+}
+
+/* Mettre tous les paragraphes en alignement justifiés */
+p {
+    text-align: justify;
+}
+
+/* Modification unique du style de la liste ayant pour id scenarios */
+#scenarios {
+	color: lightseagreen; 
+	font-weight: bold;
+}
+

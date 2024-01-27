@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+    <head> 
+    	  <link rel="stylesheet" href="styles.css">
+        <title>Checker & Beautifier in Java for python language</title>
+        <meta charset = "utf-8"/>
+        <meta name="description" content="Sujet de projet Java du semestre 3 sous forme de site"/>
+        <meta name="author" content="anabe" />
+    </head>
+    <body>
+        <header>
+    				<nav>
+        				<ul>
+            			<li><a href="./index.html">Index</a></li>
+            			<li><a href="./rdaconsole.html">Rôles de l'application : En mode Console</a></li>
+            			<li><a href="./rdagraphique.html">Rôles de l'application : En mode Graphique</a></li>
+            			<li><a href="./planning.html">Planning</a></li>
+            			<li><a href="./resultatsetcriteres.html">Résultats attendus et critères d'évaluation</a></li>
+        				</ul>
+        			</nav>
+        	</header>
+        <main>
+        <section>
+        <h1>Rôles de l'application</h1>
+        
+        <p>Les principales actions de votre logiciel sont :</p>
+        
+        <ul>
+        		<li>Lister les fichier d’extension « .py » d’un répertoire quelconque (contenant une
+arborescence inconnue de votre logiciel).</li>
+				
+				<li>Pour un fichier particulier, détecter s’il contient des fonctions sans annotation de type.</li>
+				
+				<li>Pour un fichier, identifier s’il n’a pas les deux premières lignes de commentaires.</li>
+				
+				<li>Pour un fichier, identifier s’il possède des fonctions sans commentaire « pydoc ».</li>
+				
+				<li>Pour l’ensemble des fichiers d’un répertoire, extraire les statistiques de qualité :
+pourcentage des fichiers (idéalement des fonctions) possédant des annotations de type ;
+pourcentage des fichiers possédant les deux premières lignes de commentaire ;
+pourcentage des fichiers (idéalement des fonctions) ayant des commentaires de fonction
+au format « pydoc » cf. Illustration 1.</li>				
+        </ul>
+        
+        <figure>
+            <img src="./images/stats.png" alt="Erreur d'image">
+            <figcaption>Illustration 1: exemple de résultat en mode console de l’option statistiques</figcaption>
+        </figure>
+        </section>
+        <section>
+        <h2>En mode Console</h2>
+        <p>Les paramètres attendus sur la ligne de commande sont : le nom du dossier à explorer pour
+extraire la liste des fichiers « .py » ou le nom du fichier python à analyser : vous utiliserez un
+paramètre supplémentaire permettant de spécifier le type d’entrée (« -d » (directory) dans le cas
+d’un répertoire ou « -f » (file) pour un fichier : ces 2 options étant exclusives l’une de l’autre). Le
+programme doit afficher directement dans la console le résultat de son analyse : soit la liste des
+fichiers trouvés avec leurs chemins relatifs, soit les informations d’un fichier : il y aura alors une ou
+plusieurs options supplémentaires (« --type » pour vérifier les annotations de type, « --head » pour
+vérifier les deux premières lignes de commentaire, « --pydoc » pour vérifier les commentaires de
+fonction au format « pydoc ») et on peut utiliser jusqu’à 3 options simultanément. Si aucun
+paramètre n’est indiqué, le programme affiche un message d’erreur fonctionnel. Avec l’option « -
+h » (ou --help), le programme affiche l’aide et les options possibles. Deux options supplémentaires
+concernent l’ajout des 2 premières lignes de commentaire manquantes : « --sbutf8 » (une exception
+sera levée si l’utilisateur demande l’ajout de ces lignes alors qu’elles sont déjà présentes dans le
+fichier analysé) et l’ajout d’un squelette de commentaire « pydoc » sur les fonctions ne possédant
+pas ce type de commentaires : « --comment ». Le denier paramètre « --stat » concerne les
+statistiques de qualité d’un ensemble de fichiers.Quelques scénarios d’exécution (exemples fictifs de lancement de votre premier programme):</p>
+			<ul id="scenarios">
+				<li>java -jar cli.jar</li>
+				
+				<li>java -jar cli.jar -h ou java -jar cli.jar --help</li>
+				
+				<li>java -jar cli.jar -d .</li>
+				
+				<li>java -jar cli.jar -f exemple.py --type</li>
+				
+				<li>java -jar cli.jar -f exemple.py --head</li>
+				
+				<li>java -jar cli.jar -f exemple.py --pydoc</li>
+				
+				<li>java -jar cli.jar -f exemple.py --type --head --pydoc</li>
+				
+				<li>java -jar cli.jar -f exemple.py --sbutf8</li>
+				
+				<li>java -jar cli.jar -f exemple.py --comment</li>
+				
+				<li>java -jar cli.jar -d algo-python –stat</li>
+			</ul>
+			<p>Explications : les commandes précédentes correspondent au mode console (aussi appelé mode
+terminal ou fenêtre de commande) :</p>
+			<ul>
+				<li>La première ligne doit indiquer qu’il manque des paramètres et doit proposer de taper « -h »
+(ou « --help ») pour obtenir de l’aide ;</li>
+				
+				<li>la deuxième ligne affiche les modes d’utilisation de votre logiciel en mode console (i.e. les
+options possibles et leur rôle) ;</li>
+				
+				<li>la troisième ligne liste et analyse tous les fichiers python à partir du dossier spécifié (« -d  »
+= --directory) [ici à partir du dossier courant (« . »)] en parcourant l’ensemble de
+l’arborescence des sous-dossiers, en mode console ;</li>
+				
+				<li>les lignes suivantes permettent de vérifier si les contraintes souhaitées sont présentes :
+annotation de type, commentaire d’en-tête de fichier, commentaires « pydoc » sur les
+fonctions et également de rajouter l’en-tête du fichier ou un squelette de commentaire
+« pydoc » sur les fonctions du ficher spécifié ;</li>
+				
+				<li>la dernière ligne affiche les statistiques qualitatives sur un ensemble de fichiers à partir d’un
+dossier.</li>				
+			</ul>
+		  </section>
+	</main>
+	<footer>
+   <table>
+        <tr> <td>Nom</td> <td>Prénom</td> <td>Formation</td> <td>Contact</td> </tr>
+        <tr> <td>Lopes Pinto</td> <td>Roméo</td> <td>L2-I</td> <td><a href="mailto:romeu.lopespinto@gmail.com">romeu.lopespinto@gmail.com</td></a></tr>
+        <tr> <td>Alem</td> <td>Mohamed-lamine</td> <td>L2-I</td> <td><a href="mailto:mohamedlaminealem@gmail.com">mohamedlaminealem@gmail.com</td></a></tr>
+    </table>
+    <img src="./images/cyp_banner.png" alt="Erreur d'image" width="20%" height="5%">
+	</footer>
+	</body>
+</html>
