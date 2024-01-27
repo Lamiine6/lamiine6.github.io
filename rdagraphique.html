@@ -1,64 +1,63 @@
 <!DOCTYPE html>
-<html>
-    <head> 
-    	  <link rel="stylesheet" href="styles.css">
-        <title>Checker & Beautifier in Java for python language</title>
-        <meta charset = "utf-8"/>
-		<meta name="description" content="Sujet de projet Java du semestre 3 sous forme de site"/>
-        <meta name="author" content="anabe" />
-    </head>
-    <body>
-        <header>
-    				<nav>
-        				<ul>
-            			<li><a href="./index.html">Index</a></li>
-            			<li><a href="./rdaconsole.html">Rôles de l'application : En mode Console</a></li>
-            			<li><a href="./rdagraphique.html">Rôles de l'application : En mode Graphique</a></li>
-            			<li><a href="./planning.html">Planning</a></li>
-            			<li><a href="./resultatsetcriteres.html">Résultats attendus et critères d'évaluation</a></li>
-        				</ul>
-        			</nav>
-        	</header>
-        	<main>
-        	<section>
-        <h1>Rôles de l'application</h1>
-        <h2>En mode Graphique</h2>
-        <p>L’exploration d’une arborescence quelconque7 de fichiers permettra de lister tous les fichiers et
-leurs emplacements ainsi que les principales informations utiles (taille du fichier en Ko, date du
-fichier, etc.). Pour chaque fichier « .py », on pourra visualiser les principales informations (présence
-des annotations de type, des commentaires d’en-tête de fichier sur les 2 premières lignes, des
-commentaires de fonction au format « pydoc ») et activer les modifications (ajout des 2 premières
-lignes de commentaire, ajout des squelettes de commentaire « pydoc » des fonctions) et il sera
-également possible d’éditer un fichier directement.<br>
-Exemple de lancement de l’interface graphique de votre application : i.e. votre second
-programme : java -jar gui.jar</p>
-			<p>En mode graphique, il est demandé de pouvoir afficher la liste des fichiers python d’un
-répertoire (et de ses sous-répertoires) et de pouvoir sélectionner un fichier python pour pouvoir
-éditer son contenu et ajouter automatiquement soit l’en-tête du fichier, soit le squelette de
-commentaire « pydoc » aux fonctions.</p>
-			<p>Afin de personnaliser les commentaires de fonction, il sera possible d’indiquer son nom ou ses
-initiales pour le champs « @author » des commentaires pydoc ainsi que le numéro de version
-souhaité « @version » : ces 2 informations seront sauvegardées entre 2 exécutions du programme et
-vous utiliserez la sérialisation dans ce cas (vous pouvez vous contenter de ne prendre en compte
-cette fonctionnalité que dans le cadre de l’interface graphique).</p>
-			</section>
-			<section>
+<html lang="FR">
+
+<head>
+	<link rel="stylesheet" href="styles.css">
+	<title>Checker & Beautifier in Java for python language</title>
+	<meta charset="utf-8">
+	<meta name="description" content="Sujet de projet Java du semestre 3 sous forme de site">
+	<meta name="keywords" content="Projet, Java, Python">
+	<meta name="author" content="Mohamed-lamine ALEM, Roméo LOPES PINTO" >
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+</head>
+
+<body>
+	<header>
+		<nav>
+			<ul>
+				<li><a href="./index.html">Index</a></li>
+				<li><a href="./rdaconsole.html">Rôles de l'application : En mode Console</a></li>
+				<li><a href="./rdagraphique.html">Rôles de l'application : En mode Graphique</a></li>
+				<li><a href="./planning.html">Planning</a></li>
+				<li><a href="./resultatsetcriteres.html">Résultats attendus et critères d'évaluation</a></li>
+			</ul>
+		</nav>
+	</header>
+	<main>
+		<section>
+			<h1>Rôles de l'application</h1>
+			<h2>En mode Graphique</h2>
+			<p>L’exploration d’une arborescence quelconque7 de fichiers permettra de lister tous les fichiers et leurs emplacements ainsi que les principales informations utiles (taille du fichier en Ko, date du fichier, etc.). Pour chaque fichier « .py », on pourra visualiser les principales informations (présence des annotations de type, des commentaires d’en-tête de fichier sur les 2 premières lignes, des commentaires de fonction au format « pydoc ») et activer les modifications (ajout des 2 premières lignes de commentaire, ajout des squelettes de commentaire « pydoc » des fonctions) et il sera également possible d’éditer un fichier directement.
+				<br> Exemple de lancement de l’interface graphique de votre application : i.e. votre second programme : java -jar gui.jar</p>
+			<p>En mode graphique, il est demandé de pouvoir afficher la liste des fichiers python d’un répertoire (et de ses sous-répertoires) et de pouvoir sélectionner un fichier python pour pouvoir éditer son contenu et ajouter automatiquement soit l’en-tête du fichier, soit le squelette de commentaire « pydoc » aux fonctions.</p>
+			<p>Afin de personnaliser les commentaires de fonction, il sera possible d’indiquer son nom ou ses initiales pour le champs « @author » des commentaires pydoc ainsi que le numéro de version souhaité « @version » : ces 2 informations seront sauvegardées entre 2 exécutions du programme et vous utiliserez la sérialisation dans ce cas (vous pouvez vous contenter de ne prendre en compte cette fonctionnalité que dans le cadre de l’interface graphique).</p>
+		</section>
+		<section>
 			<h1>Extensions Possibles</h1>
-			<p>Vous pouvez prévoir des améliorations à votre solution (par exemple : l’historique des
-statistiques sous la forme de logs ; la prise en compte de la personnalisation des commentaires en
-mode console également ; l’appel d’outils d’analyse python8 depuis votre programme Java, la
-génération de la documentation au format HTML en utilisant doxygen) mais <strong>uniquement si tout </strong>le
-reste est complet. Vous privilégierez donc la <strong>qualité</strong> de la réalisation à la quantité de
-fonctionnalités.</p>
-			</section>
+			<p>Vous pouvez prévoir des améliorations à votre solution (par exemple : l’historique des statistiques sous la forme de logs ; la prise en compte de la personnalisation des commentaires en mode console également ; l’appel d’outils d’analyse python8 depuis votre programme Java, la génération de la documentation au format HTML en utilisant doxygen) mais <strong>uniquement si tout </strong>le reste est complet. Vous privilégierez donc la <strong>qualité</strong> de la réalisation à la quantité de fonctionnalités.</p>
+		</section>
 	</main>
 	<footer>
-    <table>
-        <tr> <td>Nom</td> <td>Prénom</td> <td>Formation</td> <td>Contact</td> </tr>
-        <tr> <td>Lopes Pinto</td> <td>Roméo</td> <td>L2-I</td> <td><a href="mailto:romeu.lopespinto@gmail.com">romeu.lopespinto@gmail.com</td></a></tr>
-        <tr> <td>Alem</td> <td>Mohamed-lamine</td> <td>L2-I</td> <td><a href="mailto:mohamedlaminealem@gmail.com">mohamedlaminealem@gmail.com</td></a></tr>
-    </table>
-    <img src="./images/cyp_banner.png" alt="Erreur d'image" width="20%" height="5%">
-	</footer>
-	</body>
+		<table>
+			<tr>
+				<td>Nom</td>
+				<td>Prénom</td>
+				<td>Formation</td>
+				<td>Contact</td>
+			</tr>
+			<tr>
+				<td>Lopes Pinto</td>
+				<td>Roméo</td>
+				<td>L2-I</td>
+				<td><a href="mailto:romeu.lopespinto@gmail.com">romeu.lopespinto@gmail.com</a></td>
+			</tr>
+			<tr>
+				<td>Alem</td>
+				<td>Mohamed-lamine</td>
+				<td>L2-I</td>
+				<td><a href="mailto:mohamedlaminealem@gmail.com">mohamedlaminealem@gmail.com</a></td>
+			</tr>
+		</table> <img src="./images/cyp_banner.png" alt="Erreur d'image" width="300" height="150"> </footer>
+</body>
+
 </html>

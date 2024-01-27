@@ -57,10 +57,11 @@ nav {
 	background-color: lightblue;
 	opacity: 1;
 	max-width: 350px;
+	margin-bottom: 20px;
 }
 
 /* Styles pour la liste non ordonnée*/
-ul {
+nav ul {
 	list-style: none;
 	padding: 0;
 	margin: 0;
