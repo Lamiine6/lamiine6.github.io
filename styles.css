@@ -55,17 +55,17 @@ h2 {
 /* Styles pour la barre de navigation */
 nav {
 	background-color: lightblue;
-	opacity: 1;
-	max-width: 350px;
-	margin-bottom: 20px;
+	text-align: center;
 }
 
 /* Styles pour la liste non ordonnée*/
 nav ul {
 	list-style: none;
-	padding: 0;
-	margin: 0;
-	display: block; 
+}
+
+nav ul li{
+	display: inline-block;
+	padding: 20px;
 }
 
 /* Styles pour les légendes des figures */
